@@ -6,23 +6,23 @@ void main() {
     double ort = vize1 + vize2 + final1;
     System.out.println(ort);
 
+    String SonucMesaji;
 
-
-    if (ort >= 85) {
-        System.out.println("Takdir Aldınız");
+    if(ort < 50){
+    SonucMesaji="Kaldın";
+    }
+    else if(ort < 75){
+    SonucMesaji="Geçtin";
+    }
+    else if(ort <= 85){
+    SonucMesaji="Teşekkür Belgesi Aldın";
+    }
+    else{
+    SonucMesaji="Takdir Belgesi Aldın";
     }
 
-    else if (ort >= 75 && ort <= 84) {
-        System.out.println("Teşekkür Aldınız");
-    }
-
-    else if (ort >= 50 && ort <= 74) {
-        System.out.println("Geçtiniz");
-    }
-
-    else if (ort<=50) {
-        System.out.println("Kaldınız");
-    }
-
+    System.out.println(SonucMesaji);
 
 }
+
+
